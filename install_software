@@ -1,0 +1,25 @@
+#!/bin/bash
+cd ~
+mkdir -p ropod-project-software/catkin_workspace/src
+cd ropod-project-software/catkin_workspace/src
+git clone https://github.com/ropod-project/tree-ropod.git ./
+wstool init
+wstool up
+echo "source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup
+/setup.bash"  >> ~/.bashrc
+
+git clone git@git.ropod.org:ropod/ropod_common.git;
+sudo mv ropod_common /opt/ 
+
+cd ~
+wget https://raw.githubusercontent.com/blumenthal/ropod-base-cpp/master/install_deps.sh
+chmod 755 install_deps.sh
+sudo ./install_deps.sh --workspace-path=/opt --install-path=/usr/local
+cd /opt
+sudo mkdir ropod
+sudo mv ropod_common/ ropod
+
+source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup
+/setup.bash
+rosdep update;rosdep install --from-path . -i -y;
+cd ~/ropod-project-software/catkin_workspace; catkin_make;
