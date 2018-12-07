@@ -34,7 +34,12 @@
 - git: {local-name: functionalities/ropod_comm/ropod_com_mediator, uri: 'git@git.ropod.org:ropod/communication/ropod_com_mediator.git', version: develop}
 - git: {local-name: functionalities/ropod_comm/ropod_ros_msgs, uri: 'git@git.ropod.org:ropod/communication/ropod_ros_msgs.git', version: develop}
 - git: {local-name: functionalities/ropod_comm/ropod_wm_mediator, uri: 'git@git.ropod.org:ropod/wm/ropod_wm_mediator.git', version: develop}
-- git: {local-name: functionalities/ropod_comm/ropod_task_executor, uri: 'git@git.ropod.org:ropod/ropod_task_executor.git', version: develop}
+- git: {local-name: functionalities/ropod_comm/ropod_task_executor, uri: 'git@git.ropod.org:ropod/ropod_task_executor.git', version: 1.0.0}
+
+- git: {local-name: functionalities/osm_bridge_ros_wrapper, uri: 'git@git.ropod.org:ropod/wm/osm_bridge_ros_wrapper.git', version: develop}
+#- git: {local-name: functionalities/ftsm, uri: 'https://github.com/ropod-project/ftsm.git', version: master}
+#- git: {local-name: functionalities/zyre, uri: 'https://github.com/ropod-project/zyre_base.git', version: master}
+
 ## ROPOD navigation repos
 - git: {local-name: functionalities/ropod_nav/ropod_navigation, uri: 'git@git.ropod.org:ropod/navigation/ropod_navigation.git', version: develop}
 - git: {local-name: functionalities/ros_structured_nav, uri: 'https://github.com/tue-ropod/ros-structured-nav.git', version: master}
