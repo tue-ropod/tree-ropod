@@ -14,6 +14,8 @@ Though is indicated as a dependency, you might need to manually install the cost
 sudo apt-get install ros-kinetic-costmap-converter
 ```
 
+The branch of `ropod-common` should be changed to `develop` branch if `catkin build` fails.
+
 Once the software is compiled at the robot, give access of raw ethercat data to the low-level-control executable. For instance:
 
 ```
