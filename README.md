@@ -16,6 +16,15 @@ sudo apt-get install ros-kinetic-costmap-converter
 
 The branch of `ropod-common` should be changed to `develop` branch if `catkin build` fails.
 
+If `catkin build` fails, one or more of the following packages might be missing
+- ros-kinetic-sbpl
+- libsuitesparse-dev
+- ros-kinetic-libg2o
+
+To install above packages, execute `sudo apt install ros-kinetic-sbpl libsuitesparse-dev ros-kinetic-libg2o`
+
+If `catkin build` fails because it can't find `ZyreBaseCommunicator`, execute install instructions of [ropod_common](https://github.com/ropod-project/ropod_common#install).
+
 Once the software is compiled at the robot, give access of raw ethercat data to the low-level-control executable. For instance:
 
 ```
