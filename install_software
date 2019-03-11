@@ -65,8 +65,8 @@ sudo mv ftsm /opt/ropod/
 
 
 ### Execution monitoring
-mdkir -p ~/ropod-project-software/catkin_workspace/src/ropod
-cd ~/ropod-project-software/catkin_workspace/src/ropod
+mdkir -p ~/ropod-project-software/catkin_workspace/src/platform
+cd ~/ropod-project-software/catkin_workspace/src/platform
 git clone git@git.ropod.org:ropod/execution-monitoring/component-monitoring.git
 cd component-monitoring
 sudo python setup.py develop
