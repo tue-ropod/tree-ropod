@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install vim gksu git libtool autoconf mercurial cmake cython htop libpcap-dev tree atop htop python-pip libreadline-dev tshark
+sudo apt install vim gksu git libtool autoconf mercurial cmake cython htop libpcap-dev tree atop htop python-pip libreadline-dev tshark portaudio19-dev
 
 mkdir -p ~/workspace
 cd ~/workspace
