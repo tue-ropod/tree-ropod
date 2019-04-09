@@ -46,7 +46,7 @@
 - git: {local-name: functionalities/ros_structured_nav, uri: 'https://github.com/tue-ropod/ros-structured-nav.git', version: master}
 - git: {local-name: functionalities/ros_experimental_nav/teb_local_planner, uri: 'https://github.com/ropod-project/teb_local_planner.git', version: ropod-master}
 - git: {local-name: functionalities/door_status_detection, uri: 'git@git.ropod.org:ropod/navigation/door_status_detection.git', version: develop}
-- git: {local-name: functionalities/floor_detection, uri: 'git@git.ropod.org:ropod/navigation/floor_detection.git', version: develop}
+- git: {local-name: functionalities/floor_detection, uri: 'git@git.ropod.org:ropod/navigation/floor_detection.git', version: master}
 
 ## git-tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
@@ -57,6 +57,6 @@
 - git: {local-name: platform/ropod_control, uri: 'https://github.com/ropod-project/ropod_control.git', version: master}
 - git: {local-name: platform/robot_common, uri: 'https://github.com/ropod-project/robot_common.git', version: master}
 - git: {local-name: platform/ropod_teleop, uri: 'git@git.ropod.org:ropod/ropod_teleop.git', version: develop}
-- git: {local-name: platform/ropod_hri, uri: 'git@git.ropod.org:ropod/execution-monitoring/ropod_hri.git', version: develop}
+- git: {local-name: platform/ropod_hri, uri: 'git@git.ropod.org:ropod/execution-monitoring/ropod_hri.git', version: master}
 - git: {local-name: platform/ropod_low_level_control, uri: 'git@git.ropod.org:ropod/control/ropod_low_level_control.git', version: develop}
 - git: {local-name: platform/urg_node, uri: 'https://github.com/ropod-project/urg_node.git', version: master}
