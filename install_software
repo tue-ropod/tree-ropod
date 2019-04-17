@@ -64,7 +64,7 @@ sudo mv ropod_common /opt/ropod/
 git clone https://github.com/ropod-project/ftsm.git
 sudo mv ftsm /opt/ropod/
 
-git clone -b develop https://github.com/ropod-project/zyre_base.git
+git clone https://github.com/ropod-project/zyre_base.git
 sudo mv zyre_base /opt/ropod/
 
 ### Execution monitoring
