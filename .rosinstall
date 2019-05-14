@@ -30,6 +30,7 @@
 - git: {local-name: functionalities/tue_filesystem, uri: 'https://github.com/ropod-project/tue_filesystem.git', version: ropod-master}
 - git: {local-name: functionalities/tue_serialization, uri: 'https://github.com/ropod-project/tue_serialization.git', version: ropod-master}
 - git: {local-name: functionalities/problib, uri: 'https://github.com/ropod-project/problib.git', version: ropod-master}
+- git: {local-name: functionalities/wire, uri: 'https://github.com/ropod-project/wire.git', version: master}
 ## ROPOD comm repos
 #- git: {local-name: functionalities/ropod_comm/ropod_com_mediator, uri: 'git@git.ropod.org:ropod/communication/ropod_com_mediator.git', version: develop}
 - git: {local-name: functionalities/ropod_comm/ropod_ros_msgs, uri: 'git@git.ropod.org:ropod/communication/ropod_ros_msgs.git', version: develop}
