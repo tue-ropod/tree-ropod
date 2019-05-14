@@ -55,7 +55,7 @@
 - git: {local-name: platform/ropod_control, uri: 'https://github.com/ropod-project/ropod_control.git', version: master}
 - git: {local-name: platform/robot_common, uri: 'https://github.com/ropod-project/robot_common.git', version: feature/tracking}
 - git: {local-name: platform/ropod_teleop, uri: 'git@git.ropod.org:ropod/ropod_teleop.git', version: develop}
-- git: {local-name: platform/ropod_low_level_control, uri: 'git@git.ropod.org:ropod/control/ropod_low_level_control.git', version: develo}
+- git: {local-name: platform/ropod_low_level_control, uri: 'git@git.ropod.org:ropod/control/ropod_low_level_control.git', version: develop}
  
 ## tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
