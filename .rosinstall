@@ -45,7 +45,8 @@
 - git: {local-name: functionalities/ropod_nav/ropod_navigation, uri: 'git@git.ropod.org:ropod/navigation/ropod_navigation.git', version: develop}
 - git: {local-name: functionalities/ros_structured_nav, uri: 'https://github.com/tue-ropod/ros-structured-nav.git', version: master}
 - git: {local-name: functionalities/ros_experimental_nav/teb_local_planner, uri: 'https://github.com/ropod-project/teb_local_planner.git', version: ropod-master}
-
+- git: {local-name: functionalities/door_status_detection, uri: 'git@git.ropod.org:ropod/navigation/door_status_detection.git', version: develop}
+- git: {local-name: functionalities/floor_detection, uri: 'git@git.ropod.org:ropod/navigation/floor_detection.git', version: master}
 
 ## git-tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
