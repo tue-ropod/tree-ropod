@@ -122,6 +122,10 @@ sudo usermod -aG docker $USER
 cd ~/ropod-project-software/catkin_workspace/src/functionalities/osm_bridge/
 sudo pip3 install -e .
 
+## Overpass Docker container
+cd ~/ropod-project-software/catkin_workspace/src/applications/docker-overpass-api
+bash update_overpass.sh
+
 ### Systemd services
 cd ~/workspace
 git clone git@git.ropod.org:ropod/automatic-startup.git
