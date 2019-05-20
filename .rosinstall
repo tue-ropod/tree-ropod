@@ -55,6 +55,9 @@
 ## git-tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
 
+## remote monitoring and debugging
+- git: {local-name: functionalities/ropod_experiment_executor, uri: 'git@git.ropod.org:ropod/execution-monitoring/ropod_experiment_executor.git', version: master}
+
 # platform repos
 - git: {local-name: platform/setup, uri: 'https://github.com/ropod-project/setup.git', version: master}
 - git: {local-name: platform/ropod_tue_1_bringup, uri: 'https://github.com/ropod-project/ropod_tue_1_bringup.git', version: master}
