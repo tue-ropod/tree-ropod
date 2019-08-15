@@ -53,7 +53,8 @@ cd ropod-project-software/catkin_workspace/src
 git clone https://github.com/ropod-project/tree-ropod.git ./
 wstool init
 wstool up
-echo "source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/setup.bash"  >> ~/.bashrc
+# echo "source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/setup.bash"  >> ~/.bashrc
+echo "source ~/ropod-project-software/catkin_workspace/devel/setup.bash"  >> ~/.bashrc
 
 ### ropod_common
 sudo mkdir -p /opt/ropod
@@ -141,16 +142,13 @@ cd /opt
 sudo mkdir ropod
 sudo mv ropod_common/ ropod
 
-source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup
-/setup.bash
-rosdep update;rosdep install --from-path . -i -y;
-
-cd ~/ropod-project-software/catkin_workspace/src/functionalities;
+cd ~/ropod-project-software/catkin_workspace/src/functionalities
 wget -4 dlib.net/files/dlib-19.16.tar.bz2
 tar -xf dlib-19.16.tar.bz2 
 
 ### Catkin build
-source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/setup.bash
+# source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/setup.bash
+source ~/ropod-project-software/catkin_workspace/devel/setup.bash
 rosdep update
 rosdep install --from-path . -i -y
 cd ~/ropod-project-software/catkin_workspace
