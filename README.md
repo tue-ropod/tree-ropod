@@ -6,7 +6,7 @@ Repository containing the rosinstall file with the structure of the whole softwa
 Installation of dependencies:
 - Install ROS kinetic (follow [instructions](http://wiki.ros.org/kinetic/Installation))
 - `sudo apt install ros-kinetic-sbpl libsuitesparse-dev ros-kinetic-libg2o`
-- `./install_software`
+- `./progress_installer`
 
 Keep in mind that the robot should have access to all the repositories, meaning that probably you need to add a ssh_key to the repositories server.
 
