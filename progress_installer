@@ -1,0 +1,65 @@
+#! /bin/bash
+
+# ======================================================================
+# colors
+# ======================================================================
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+
+# ======================================================================
+# get script file
+# ======================================================================
+current_dir="`dirname \"$0\"`"              # relative
+current_dir="`( cd \"$current_dir\" && pwd )`"  # absolutized and normalized
+if [ -z "$current_dir" ] ; then
+    exit 1  # fail
+fi
+script_filename="$current_dir""/install_software"
+if ! [ -f $script_filename ]; then
+    echo "script file does not exist"
+    exit 1  # fail
+fi
+
+# ======================================================================
+# check counter file (create one if it does not exist
+# ======================================================================
+counter_filename='/tmp/progress_counter'
+if [ -f $counter_filename ]; then
+    printf "${GREEN}RETRYING SCRIPT${NC}\n"
+else
+    touch $counter_filename
+    echo "1" > $counter_filename
+    printf "${GREEN}USING SCRIPT FOR FIRST TIME${NC}\n"
+fi
+
+counter=`cat $counter_filename`
+
+# ======================================================================
+# iterate over each line of script file and run commands if they are not
+# already executed
+# ======================================================================
+line_counter=0
+while IFS= read -r line
+do
+    ((line_counter=line_counter+1))
+    printf "${GREEN}${line}${NC}\n"
+    if [ $line_counter -lt $counter ]; then
+        printf "${GREEN}Skipping${NC}\n\n"
+        continue
+    fi
+
+    # evaluate line from script and break loop if error occured
+    eval $line
+    exit_code=$?
+    if [ $exit_code -ne 0 ]; then
+        printf "${RED}Error occured${NC}\n"
+        break
+    fi
+
+    # increment counter if command was successful
+    ((counter=counter+1))
+    echo $counter > $counter_filename
+
+done < "$script_filename"
