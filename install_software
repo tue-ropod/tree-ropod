@@ -20,7 +20,7 @@ cd pyzmq && sudo python setup.py install
 
 ### ROS kinetic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
 sudo apt install ros-kinetic-desktop-full ros-kinetic-sbpl libsuitesparse-dev ros-kinetic-libg2o ros-kinetic-costmap-2d ros-kinetic-nav-core ros-kinetic-costmap-converter ros-kinetic-move-base-msgs ros-kinetic-laser-proc ros-kinetic-urg-c ros-kinetic-joy ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-sick-tim python-catkin-tools python-wstool
 
@@ -144,7 +144,7 @@ sudo mv ropod_common/ ropod
 
 cd ~/ropod-project-software/catkin_workspace/src/functionalities
 wget -4 dlib.net/files/dlib-19.16.tar.bz2
-tar -xf dlib-19.16.tar.bz2 
+tar -xf dlib-19.16.tar.bz2
 
 ### Catkin build
 # source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/setup.bash
