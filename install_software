@@ -1,23 +1,5 @@
 #!/bin/bash
-cd ~
-WORKSPACE_NAME="catkin_workspace"
-
 sudo apt install python3-wstool vim git libtool cmake cython atop htop openssh-server
-
-mkdir -p ropod-project-software/${WORKSPACE_NAME}/src
-cd ropod-project-software/${WORKSPACE_NAME}/src
-git clone https://github.com/tue-ropod/tree-ropod.git ./
-git checkout feature/remove_ed_dependency
-
-
-cd ..
-wstool init
-cd src
-wstool up
-echo "source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash"  >> ~/.bashrc
-
-
-
 
 ### ROS noetic 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -35,8 +17,23 @@ sudo usermod -a -G dialout $USER
 mkdir -p ~/.{$USER}
 echo "export ROS_IP=" >> ~/.{$USER}/env.sh
 
+
+# install ropod software
+cd ~
+WORKSPACE_NAME="catkin_workspace"
+mkdir -p ropod-project-software/${WORKSPACE_NAME}/src
+cd ropod-project-software/${WORKSPACE_NAME}/src
+git clone https://github.com/tue-ropod/tree-ropod.git ./
+git checkout feature/remove_ed_dependency
+
+
+cd ..
+wstool init
+cd src
+wstool up
+echo "source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash"  >> ~/.bashrc
+
 source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash
 rosdep update;rosdep install --from-path . -i -y;
 cd ~/ropod-project-software/${WORKSPACE_NAME}; catkin_make;
-
 
