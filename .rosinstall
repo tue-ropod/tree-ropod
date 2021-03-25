@@ -5,11 +5,10 @@
 
 - git: {local-name: applications/ropod_navigation_test, uri: 'https://github.com/tue-ropod/ropod_navigation_test.git', version: master}
 - git: {local-name: applications/miscellaneous, uri: 'https://github.com/tue-ropod/miscellaneous.git', version: master}
-# - git: {local-name: applications/occupancy_grids, uri: 'git@git.ropod.org:ropod/wm/occupancy_grids.git', version: develop}
+- git: {local-name: applications/maps, uri: 'https://github.com/tue-ropod/ropod_maps.git', version: main}
 
 
 # Functionalities repos
-
 
 ## ROPOD comm repos
 # - git: {local-name: functionalities/ropod_comm/ropod_com_mediator, uri: 'git@git.ropod.org:ropod/communication/ropod_com_mediator.git', version: develop}
@@ -27,14 +26,16 @@
 
 ## git-tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
-- git: {local-name: platform/ropod_low_level_control, uri: 'https://gitlab.tue.nl/clopez/ropod-platform-control.git', version: feature/improve_control_modularity}
+
 
 # platform repos
+
 - git: {local-name: platform/setup, uri: 'https://github.com/tue-ropod/setup.git', version: master}
 #- git: {local-name: platform/ropod_tue_1_bringup, uri: 'https://github.com/ropod-project/ropod_tue_1_bringup.git', version: master}
 - git: {local-name: platform/ropod_tue_2_bringup, uri: 'https://github.com/tue-ropod/ropod_tue_2_bringup.git', version: fix/simulation}
 - git: {local-name: platform/robot_common, uri: 'https://github.com/tue-ropod/robot_common.git', version: feature/remove_unused_dependencies}
 - git: {local-name: platform/ropod_teleop, uri: 'https://github.com/tue-ropod/ropod_teleop.git', version: master}
 - git: {local-name: platform/urg_node, uri: 'https://github.com/ropod-project/urg_node.git', version: master}
+- git: {local-name: platform/ropod_low_level_control, uri: 'https://gitlab.tue.nl/clopez/ropod-platform-control.git', version: feature/improve_control_modularity}
 #- git: {local-name: platform/ropod_twist_mux, uri: 'git@git.ropod.org:ropod/navigation/ropod_twist_mux.git', version: master}
 #- git: {local-name: platform/ropod_hri, uri: 'git@git.ropod.org:ropod/execution-monitoring/ropod_hri.git', version: master}
