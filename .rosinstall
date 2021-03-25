@@ -27,7 +27,7 @@
 
 ## git-tooling
 - git: {local-name: functionalities/multi-git-status, uri: 'https://github.com/fboender/multi-git-status.git', version: master}
-- git: {local-name: platform/ropod_low_level_control, uri: 'https://gitlab.tue.nl/clopez/ropod-platform-control.git', version: master}
+- git: {local-name: platform/ropod_low_level_control, uri: 'https://gitlab.tue.nl/clopez/ropod-platform-control.git', version: feature/improve_control_modularity}
 
 # platform repos
 - git: {local-name: platform/setup, uri: 'https://github.com/tue-ropod/setup.git', version: master}

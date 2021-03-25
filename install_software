@@ -32,6 +32,8 @@ wstool init
 cd src
 wstool up
 echo "source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash"  >> ~/.bashrc
+echo "source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_2_bringup/setup.bash"  >> ~/.bashrc
+
 
 source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash
 rosdep update;rosdep install --from-path . -i -y;
