@@ -37,5 +37,5 @@ echo "source ~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_2_
 
 source ~/ropod-project-software/${WORKSPACE_NAME}/src/platform/setup/devpc/setup.bash
 rosdep update;rosdep install --from-path . -i -y;
-cd ~/ropod-project-software/${WORKSPACE_NAME}; catkin_make;
+# cd ~/ropod-project-software/${WORKSPACE_NAME}; catkin_make;
 
