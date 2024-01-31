@@ -36,6 +36,6 @@
 - git: {local-name: platform/robot_common, uri: 'https://github.com/tue-ropod/robot_common.git', version: feature/remove_unused_dependencies}
 - git: {local-name: platform/ropod_teleop, uri: 'https://github.com/tue-ropod/ropod_teleop.git', version: noetic}
 - git: {local-name: platform/urg_node, uri: 'https://github.com/ropod-project/urg_node.git', version: master}
-- git: {local-name: platform/ropod_low_level_control, uri: 'git@gitlab.tue.nl:clopez/ropod-platform-control.git', version: feature/improve_control_modularity}
+- git: {local-name: platform/ropod_low_level_control, uri: 'git@gitlab.tue.nl:clopez/ropod-platform-control.git', version: origin/cura}
 #- git: {local-name: platform/ropod_twist_mux, uri: 'git@git.ropod.org:ropod/navigation/ropod_twist_mux.git', version: master}
 #- git: {local-name: platform/ropod_hri, uri: 'git@git.ropod.org:ropod/execution-monitoring/ropod_hri.git', version: master}
