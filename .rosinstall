@@ -30,7 +30,7 @@
 
 # platform repos
 
-- git: {local-name: platform/setup, uri: 'https://github.com/tue-ropod/setup.git', version: master}
+- git: {local-name: platform/setup, uri: 'https://github.com/tue-ropod/setup.git', version: main}
 #- git: {local-name: platform/ropod_tue_1_bringup, uri: 'https://github.com/ropod-project/ropod_tue_1_bringup.git', version: master}
 - git: {local-name: platform/ropod_tue_2_bringup, uri: 'https://github.com/tue-ropod/ropod_tue_2_bringup.git', version: fix/simulation}
 - git: {local-name: platform/robot_common, uri: 'https://github.com/tue-ropod/robot_common.git', version: feature/remove_unused_dependencies}
